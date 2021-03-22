@@ -1,0 +1,7 @@
+<div [ngClass]="{'done': addProduct}">
+    <h5>{{product.name}}</h5>
+    <ul>
+      <li><span class="material-icons done-icon" *ngIf="!add" (click)="addProduct()">done</span></li>
+      <li><span class="material-icons delete-icon" (click)="removeProduct()">delete</span></li>
+    </ul>
+  </div>

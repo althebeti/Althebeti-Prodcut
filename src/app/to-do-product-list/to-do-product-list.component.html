@@ -1,0 +1,4 @@
+<div>
+  <h1>Althebeti Prodcut</h1>
+  <app-add-product (addproduct)="addProduct($event)"></app-add-product>
+  <app-show-product *ngFor="let product of productList" [product]="product" (delete)="deleteProduct($event)" (add)="addProduct($event)"></app-show-product>
